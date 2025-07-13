@@ -1,3 +1,15 @@
+const scroll = new LocomotiveScroll({
+	el: document.querySelector('[data-scroll-container]'),
+	smooth: true,
+	multiplier: 1.2,
+	smartphone: {
+		smooth: true,
+	},
+	tablet: {
+		smooth: true,
+	},
+});
+
 function toggleMenu() {
 	const menu = document.querySelector('.menu-links');
 	const icon = document.querySelector('.hamburger-icon');

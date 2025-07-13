@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+
 </head>
 
-<body>
-    <nav id="nav">
+<body data-scroll-container>
+    <div id="main-scroll" data-scroll-container>
+        <nav id="nav" data-scroll-section>
         <div class="logo">Ammar Multani</div>
         <div>
             <ul class="nav-links">
@@ -26,7 +29,7 @@
             <i class="fa-solid fa-moon" id="theme-icon"></i>
         </div>
     </nav>
-    <nav id="hamburger-nav">
+    <nav id="hamburger-nav" data-scroll-section>
         <div class="logo">Ammar Multani</div>
         <div class="theme-toggle" onclick="toggleTheme()">
             <i class="fa-solid fa-moon" id="theme-icon-mobile"></i>
@@ -46,7 +49,7 @@
             </ul>
         </div>
     </nav>
-    <section id="profile">
+    <section id="profile" data-scroll-section>
         <div class="section__pic-container">
             <img src="./assets/web2.jpg" alt="Ammar Multani Profile Pic" />
         </div>
@@ -70,7 +73,7 @@
             </div>
         </div>
     </section>
-    <section id="about">
+    <section id="about" data-scroll-section>
         <p class="section__text-p1">Get to know more</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
@@ -102,7 +105,7 @@
         </div>
         <a href="#experience"><i class="fa-solid fa-arrow-down" alt="arrow icon" class="icon arrow"></i></a>
     </section>
-    <section id="experience">
+    <section id="experience" data-scroll-section>
         <p class="section__text-p1">Explore My</p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
@@ -151,7 +154,7 @@
         </div>
         <a href="#experience"><i class="fa-solid fa-arrow-down" alt="arrow icon" class="icon arrow"></i></a>
     </section>
-    <section id="projects">
+    <section id="projects" data-scroll-section>
         <p class="section__text-p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
@@ -224,7 +227,7 @@
         </div>
         <a href="#projects"><i class="fa-solid fa-arrow-down" alt="arrow icon" class="icon arrow"></i></a>
     </section>
-    <section id="contact">
+    <section id="contact" data-scroll-section>
         <p class="section__text-p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
 
@@ -245,7 +248,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer data-scroll-section>
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
@@ -260,6 +263,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    </div>
 </body>
 
 </html>
