@@ -7,9 +7,7 @@ I’m **Ammar Multani**, a passionate and creative frontend web developer from V
 
 ## 🚀 Live Demo
 
-🌐 [Visit My Portfolio](https://your-portfolio-url.com)  
-*(Replace with your deployed site URL)*
-
+🌐 https://ammarmultani03.github.io/portfolio/
 ---
 
 ## 🧰 Tech Stack
